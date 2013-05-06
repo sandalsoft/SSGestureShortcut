@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07A5709D17347D2600FF8692 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A5709C17347D2600FF8692 /* Foundation.framework */; };
+		07A570A217347D2600FF8692 /* SSGestureShortcuts.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07A570A117347D2600FF8692 /* SSGestureShortcuts.h */; };
+		07A570A417347D2600FF8692 /* SSGestureShortcuts.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A570A317347D2600FF8692 /* SSGestureShortcuts.m */; };
+		07A570BD1734860A00FF8692 /* GestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A570BC1734860A00FF8692 /* GestureView.m */; };
+		07A570C01734B09A00FF8692 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A570BF1734B09A00FF8692 /* Stroke.m */; };
+		07A570C317352F8C00FF8692 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A570C217352F8C00FF8692 /* QuartzCore.framework */; };
+		07A5710E173548FB00FF8692 /* DollarDefaultGestures.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5710217353EF300FF8692 /* DollarDefaultGestures.m */; };
+		07A5710F173548FB00FF8692 /* DollarP.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5710417353EF500FF8692 /* DollarP.m */; };
+		07A57110173548FB00FF8692 /* DollarPGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5710617353EF900FF8692 /* DollarPGestureRecognizer.m */; };
+		07A57111173548FB00FF8692 /* DollarPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5710817353EFF00FF8692 /* DollarPoint.m */; };
+		07A57112173548FB00FF8692 /* DollarPointCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5710A17353F0700FF8692 /* DollarPointCloud.m */; };
+		07A57113173548FB00FF8692 /* DollarResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5710C17353F1100FF8692 /* DollarResult.m */; };
+		07A5711617354D7E00FF8692 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5711517354D7E00FF8692 /* Common.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		07A5709717347D2600FF8692 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				07A570A217347D2600FF8692 /* SSGestureShortcuts.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07A5709917347D2600FF8692 /* libSSGestureShortcuts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSSGestureShortcuts.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		07A5709C17347D2600FF8692 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		07A570A017347D2600FF8692 /* SSGestureShortcuts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SSGestureShortcuts-Prefix.pch"; sourceTree = "<group>"; };
+		07A570A117347D2600FF8692 /* SSGestureShortcuts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSGestureShortcuts.h; sourceTree = "<group>"; };
+		07A570A317347D2600FF8692 /* SSGestureShortcuts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSGestureShortcuts.m; sourceTree = "<group>"; };
+		07A570BB1734860A00FF8692 /* GestureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureView.h; sourceTree = "<group>"; };
+		07A570BC1734860A00FF8692 /* GestureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureView.m; sourceTree = "<group>"; };
+		07A570BE1734B09A00FF8692 /* Stroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
+		07A570BF1734B09A00FF8692 /* Stroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
+		07A570C217352F8C00FF8692 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		07A5710117353EF200FF8692 /* DollarDefaultGestures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DollarDefaultGestures.h; sourceTree = "<group>"; };
+		07A5710217353EF300FF8692 /* DollarDefaultGestures.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DollarDefaultGestures.m; sourceTree = "<group>"; };
+		07A5710317353EF300FF8692 /* DollarP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DollarP.h; sourceTree = "<group>"; };
+		07A5710417353EF500FF8692 /* DollarP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DollarP.m; sourceTree = "<group>"; };
+		07A5710517353EF700FF8692 /* DollarPGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DollarPGestureRecognizer.h; sourceTree = "<group>"; };
+		07A5710617353EF900FF8692 /* DollarPGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DollarPGestureRecognizer.m; sourceTree = "<group>"; };
+		07A5710717353EFB00FF8692 /* DollarPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DollarPoint.h; sourceTree = "<group>"; };
+		07A5710817353EFF00FF8692 /* DollarPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DollarPoint.m; sourceTree = "<group>"; };
+		07A5710917353F0300FF8692 /* DollarPointCloud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DollarPointCloud.h; sourceTree = "<group>"; };
+		07A5710A17353F0700FF8692 /* DollarPointCloud.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DollarPointCloud.m; sourceTree = "<group>"; };
+		07A5710B17353F0D00FF8692 /* DollarResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DollarResult.h; sourceTree = "<group>"; };
+		07A5710C17353F1100FF8692 /* DollarResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DollarResult.m; sourceTree = "<group>"; };
+		07A5711417354D7E00FF8692 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		07A5711517354D7E00FF8692 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		07A57120173685AC00FF8692 /* GestureViewiPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GestureViewiPad.xib; sourceTree = "<group>"; };
+		07A57121173685AC00FF8692 /* GestureViewiPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GestureViewiPhone.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07A5709617347D2600FF8692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A570C317352F8C00FF8692 /* QuartzCore.framework in Frameworks */,
+				07A5709D17347D2600FF8692 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07A5709017347D2600FF8692 = {
+			isa = PBXGroup;
+			children = (
+				07A5709E17347D2600FF8692 /* SSGestureShortcuts */,
+				07A5709B17347D2600FF8692 /* Frameworks */,
+				07A5709A17347D2600FF8692 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07A5709A17347D2600FF8692 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07A5709917347D2600FF8692 /* libSSGestureShortcuts.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07A5709B17347D2600FF8692 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07A570C217352F8C00FF8692 /* QuartzCore.framework */,
+				07A5709C17347D2600FF8692 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07A5709E17347D2600FF8692 /* SSGestureShortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				07A5710D17353F3400FF8692 /* DollarP */,
+				07A5711417354D7E00FF8692 /* Common.h */,
+				07A5711517354D7E00FF8692 /* Common.m */,
+				07A570A117347D2600FF8692 /* SSGestureShortcuts.h */,
+				07A570A317347D2600FF8692 /* SSGestureShortcuts.m */,
+				07A570BB1734860A00FF8692 /* GestureView.h */,
+				07A570BC1734860A00FF8692 /* GestureView.m */,
+				07A570BE1734B09A00FF8692 /* Stroke.h */,
+				07A570BF1734B09A00FF8692 /* Stroke.m */,
+				07A57120173685AC00FF8692 /* GestureViewiPad.xib */,
+				07A57121173685AC00FF8692 /* GestureViewiPhone.xib */,
+				07A5709F17347D2600FF8692 /* Supporting Files */,
+			);
+			path = "SSGestureShortcuts";
+			sourceTree = "<group>";
+		};
+		07A5709F17347D2600FF8692 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07A570A017347D2600FF8692 /* SSGestureShortcuts-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07A5710D17353F3400FF8692 /* DollarP */ = {
+			isa = PBXGroup;
+			children = (
+				07A5710117353EF200FF8692 /* DollarDefaultGestures.h */,
+				07A5710217353EF300FF8692 /* DollarDefaultGestures.m */,
+				07A5710317353EF300FF8692 /* DollarP.h */,
+				07A5710417353EF500FF8692 /* DollarP.m */,
+				07A5710517353EF700FF8692 /* DollarPGestureRecognizer.h */,
+				07A5710617353EF900FF8692 /* DollarPGestureRecognizer.m */,
+				07A5710717353EFB00FF8692 /* DollarPoint.h */,
+				07A5710817353EFF00FF8692 /* DollarPoint.m */,
+				07A5710917353F0300FF8692 /* DollarPointCloud.h */,
+				07A5710A17353F0700FF8692 /* DollarPointCloud.m */,
+				07A5710B17353F0D00FF8692 /* DollarResult.h */,
+				07A5710C17353F1100FF8692 /* DollarResult.m */,
+			);
+			name = DollarP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07A5709817347D2600FF8692 /* SSGestureShortcuts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07A570A717347D2600FF8692 /* Build configuration list for PBXNativeTarget "SSGestureShortcuts" */;
+			buildPhases = (
+				07A5709517347D2600FF8692 /* Sources */,
+				07A5709617347D2600FF8692 /* Frameworks */,
+				07A5709717347D2600FF8692 /* CopyFiles */,
+				07A5711D1736831900FF8692 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SSGestureShortcuts";
+			productName = "SSGestureShortcuts";
+			productReference = 07A5709917347D2600FF8692 /* libSSGestureShortcuts.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07A5709117347D2600FF8692 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Sandalsoft;
+			};
+			buildConfigurationList = 07A5709417347D2600FF8692 /* Build configuration list for PBXProject "SSGestureShortcuts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 07A5709017347D2600FF8692;
+			productRefGroup = 07A5709A17347D2600FF8692 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07A5709817347D2600FF8692 /* SSGestureShortcuts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07A5711D1736831900FF8692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07A5709517347D2600FF8692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A5710E173548FB00FF8692 /* DollarDefaultGestures.m in Sources */,
+				07A5710F173548FB00FF8692 /* DollarP.m in Sources */,
+				07A57110173548FB00FF8692 /* DollarPGestureRecognizer.m in Sources */,
+				07A57111173548FB00FF8692 /* DollarPoint.m in Sources */,
+				07A57112173548FB00FF8692 /* DollarPointCloud.m in Sources */,
+				07A57113173548FB00FF8692 /* DollarResult.m in Sources */,
+				07A570A417347D2600FF8692 /* SSGestureShortcuts.m in Sources */,
+				07A570BD1734860A00FF8692 /* GestureView.m in Sources */,
+				07A570C01734B09A00FF8692 /* Stroke.m in Sources */,
+				07A5711617354D7E00FF8692 /* Common.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		07A570A517347D2600FF8692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		07A570A617347D2600FF8692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07A570A817347D2600FF8692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SSGestureShortcuts.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SSGestureShortcuts/SSGestureShortcuts-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		07A570A917347D2600FF8692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SSGestureShortcuts.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SSGestureShortcuts/SSGestureShortcuts-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07A5709417347D2600FF8692 /* Build configuration list for PBXProject "SSGestureShortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A570A517347D2600FF8692 /* Debug */,
+				07A570A617347D2600FF8692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07A570A717347D2600FF8692 /* Build configuration list for PBXNativeTarget "SSGestureShortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A570A817347D2600FF8692 /* Debug */,
+				07A570A917347D2600FF8692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07A5709117347D2600FF8692 /* Project object */;
+}
