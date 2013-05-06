@@ -45,7 +45,7 @@
     return self;
 }
 
-- (void)startGestureRouter:(UIView *)callingView
+- (void)startGestureRecognition:(UIView *)callingView
                    success:(void (^)(NSDictionary *gestureInfo))success
                    failure:(void (^)(NSError *error))failure {
     
@@ -63,7 +63,7 @@
     
 }
 
-- (void)startGestureRouter:(UIView *)callingView {
+- (void)startGestureRecognition:(UIView *)callingView {
     //    NSLog(@"in router with my view: %@", callingView);
     
     self.gestureView  = [[[NSBundle mainBundle] loadNibNamed:GestureViewiPhoneXib owner:self options:nil] lastObject];
@@ -77,13 +77,6 @@
     [callingView addSubview:self.gestureView];
 }
 
-    // Process the touchesfrom the gesture view
-- (void) gestureTouchesDone:(NSNotification *)gestureNotification {
-    
-    [self.dollarPGestureRecognizer recognize];
-    [self.gestureView removeFromSuperview];
-}
-
 - (void)gestureIsRecognized:(DollarPGestureRecognizer *)sender {
     [self removeBorder:self.sendingView];
     DollarResult *result = [sender result];
@@ -94,16 +87,28 @@
 
 
 
+#pragma mark - Touch gesture end Notification 
+    // Process the touchesfrom the gesture view
+- (void) gestureTouchesDone:(NSNotification *)gestureNotification {
+    
+    [self.dollarPGestureRecognizer recognize];
+    [self.gestureView removeFromSuperview];
+}
+
+
+
 
 
 
 - (void)activateGesture:(UILongPressGestureRecognizer *)sender {
     if(sender.state == UIGestureRecognizerStateEnded)
     {
-        [self startGestureRouter:self.sendingView];
+        [self startGestureRecognition:self.sendingView];
     }
 }
 
+
+#pragma mark - UIView visual stuff
 
 - (UIImage *)takeScreenShot:(UIView *)view {
     CGRect rect = [view bounds];

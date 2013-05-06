@@ -36,11 +36,11 @@
 
 - (id)initWithCallingView:(UIView *)callingView;
 
-- (void)startGestureRouter:(UIView *)callingView
+- (void)startGestureRecognition:(UIView *)callingView
                   success:(void (^)(NSDictionary *gestureInfo))success
                   failure:(void (^)(NSError *error))failure;
 
-- (void)startGestureRouter:(UIView *)callingView;
+- (void)startGestureRecognition:(UIView *)callingView;
 
 
 @end
