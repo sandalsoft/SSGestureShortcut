@@ -1,6 +1,6 @@
 //
-//  SSGestureShortcuts.h
-//  SSGestureShortcuts
+//  SSGestureShortcut.h
+//  SSGestureShortcut
 //
 //  Created by Eric Nelson on 5/3/13.
 //  Copyright (c) 2013 Sandalsoft. All rights reserved.
@@ -12,14 +12,13 @@
 #import "DollarPGestureRecognizer.h"
 
 
-@protocol GestureDelegate <NSObject>
-
+@protocol SSGestureShortcutDelegate <NSObject>
 @required
 - (void)gestureRecognitionDidFinish:(NSDictionary *) gestureDict;
 @end
 
 
-@interface SSGestureShortcuts : NSObject
+@interface SSGestureShortcut : NSObject
 
 @property (strong, nonatomic) IBOutlet GestureView *gestureView;
 @property (strong, nonatomic) DollarPGestureRecognizer *dollarPGestureRecognizer;
@@ -30,7 +29,7 @@
 @property BOOL showViewBorderOutline;
 @property (weak, nonatomic) UIColor *viewBorderOutlineColor;
 @property float viewBorderOutlineThickness;
-@property (nonatomic, assign) id delegate;
+@property (nonatomic, assign) id gestureRegocnitionDidFinishdelegate;
 
 
 

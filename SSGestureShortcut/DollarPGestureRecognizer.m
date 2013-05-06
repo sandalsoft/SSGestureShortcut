@@ -17,13 +17,29 @@
     return self;
 }
 
-- (void)reset {
-    [super reset];
-    [currentTouches removeAllObjects];
-    [currentPoints removeAllObjects];
-    strokeId = 0;
+
+
+#pragma mark - Recognize Gesture - the main event
+
+- (void)recognize {
+    if ([currentPoints count] == 0) {
+        [self setState:UIGestureRecognizerStateFailed];
+        return;
+    }
+    
+    points = [currentPoints copy];
+    
+    if ([self state] == UIGestureRecognizerStatePossible) {
+        result = [dollarP recognize:points];
+        [self setState:UIGestureRecognizerStateRecognized];
+    }
 }
 
+
+
+
+
+#pragma mark - Gesture touch delegates
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
     for (UITouch *touch in touches) {
@@ -51,12 +67,26 @@
     }
 }
 
+
+// Touch done.  Only recognizes single touch until timer + multi touch is built-in
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     //    NSLog(@"touch end starting timer");
     //    NSDictionary *touchInfo = @{@"touches":touches,@"event":event};
     //    timer = [NSTimer scheduledTimerWithTimeInterval:1.5f target:self selector:@selector(gestureComplete) userInfo:touchInfo repeats:NO];
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:GESTURE_TOUCH_END object:self];
+    
+    // Send notification and/or call delegate to alert other objects touches are done
+    // This may or may not be necessary.  We can call [self recognize] ourselves from here
+    
+//    [[NSNotificationCenter defaultCenter] postNotificationName:GESTURE_TOUCH_END object:self];
+//    [self touchesDidFinishDelegate];
+    
+    
+    // Kick off [gesture recognize] from here?  Do even I need to send a delegate/notification?
+    [self recognize];
+    
+    
+    // Does this need to be before or after recognize and notification/delegate?
     [super touchesEnded:touches withEvent:event];
 }
 
@@ -67,18 +97,14 @@
     [self setState:UIGestureRecognizerStateFailed];
 }
 
-- (void)recognize {
-    if ([currentPoints count] == 0) {
-        [self setState:UIGestureRecognizerStateFailed];
-        return;
-    }
-    
-    points = [currentPoints copy];
-    
-    if ([self state] == UIGestureRecognizerStatePossible) {
-        result = [dollarP recognize:points];
-        [self setState:UIGestureRecognizerStateRecognized];
-    }
+
+#pragma mark - Gesture and points helpers
+
+- (void)reset {
+    [super reset];
+    [currentTouches removeAllObjects];
+    [currentPoints removeAllObjects];
+    strokeId = 0;
 }
 
 - (NSMutableArray *)pointClouds {
@@ -98,5 +124,6 @@
 - (NSArray *)points {
     return points;
 }
+
 
 @end

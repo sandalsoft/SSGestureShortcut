@@ -4,6 +4,13 @@
 #import <UIKit/UIGestureRecognizerSubclass.h>
 #import "DollarP.h"
 
+
+@protocol DollarPTouchesEndedDelegate <NSObject>
+@required
+- (void)touchesDidFinish;
+@end
+
+
 @interface DollarPGestureRecognizer : UIGestureRecognizer {
     DollarP *dollarP;
     NSMutableDictionary *currentTouches;
@@ -14,6 +21,8 @@
 
 @property (nonatomic, strong) NSMutableArray *pointClouds;
 @property (nonatomic, strong, readonly) DollarResult *result;
+
+@property (nonatomic, assign) id touchesDidFinishDelegate;
 
 - (void)reset;
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;

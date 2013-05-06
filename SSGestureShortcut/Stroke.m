@@ -1,6 +1,6 @@
 //
 //  Stroke.m
-//  SSGestureShortcuts
+//  SSGestureShortcut
 //
 //  Created by Eric Nelson on 5/3/13.
 //  Copyright (c) 2013 Sandalsoft. All rights reserved.

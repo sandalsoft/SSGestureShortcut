@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'SSGestureShortcut' target in the 'SSGestureShortcut' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
+
