@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.platform     = :ios, '5.0'
   s.name         = 'SSGestureShortcuts'
-  s.version      = '0.1.2'
+  s.version      = '0.1.3'
   s.license      = 'MIT'
   s.homepage     = 'https://github.com/sandalsoft/SSGestureShortcuts'
   s.authors      = { 'Eric Nelson' => 'eric@sandalsoft' }
