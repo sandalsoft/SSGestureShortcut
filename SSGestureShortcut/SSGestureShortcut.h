@@ -35,9 +35,8 @@
 
 - (id)initWithCallingView:(UIView *)callingView;
 
-- (void)startGestureRecognition:(UIView *)callingView
-                  success:(void (^)(NSDictionary *gestureInfo))success
-                  failure:(void (^)(NSError *error))failure;
+
+- (void)start;
 
 - (void)startGestureRecognition:(UIView *)callingView;
 

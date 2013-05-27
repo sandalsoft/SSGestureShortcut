@@ -14,9 +14,15 @@
 
 @implementation SSGestureShortcut
 
++ (instancetype)SSGestureShortcutWithView:(UIView *)callingView
+                                  success:(void (^)(NSDictionary *gestureInfo))success
+                                  failure:(void (^)(NSError *error))failure {
+    SSGestureShortcut *gestureShortcut = [(SSGestureShortcut *)[self alloc] initWithCallingView:callingView];
+//    gestureShortcut // set CompletionBlockShit 
+}
 
-
-- (id)initWithCallingView:(UIView *)callingView {
+- (id)initWithCallingView:(UIView *)callingView { 
+    
     if ((self = [super init])) {
         
         // Receive notifcations from DollarPGestureRecognizer when touch ends (ie, finger is lifeted up)
@@ -47,6 +53,7 @@
 }
 
 
+
 // Entry point with delegate or notification.  "Returning" method if the delegate down below
 - (void)startGestureRecognition:(UIView *)callingView {
     //    NSLog(@"in router with my view: %@", callingView);
@@ -62,6 +69,9 @@
     [callingView addSubview:self.gestureView];
 }
 
+- (void)start {
+    
+}
 
 // Entry point for using blocks.  how to return the success block with the TargetAction used with DollarPGestureRecognizer?
 - (void)startGestureRecognition:(UIView *)callingView
