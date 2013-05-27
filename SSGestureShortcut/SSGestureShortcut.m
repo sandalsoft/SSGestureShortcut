@@ -14,12 +14,7 @@
 
 @implementation SSGestureShortcut
 
-+ (instancetype)SSGestureShortcutWithView:(UIView *)callingView
-                                  success:(void (^)(NSDictionary *gestureInfo))success
-                                  failure:(void (^)(NSError *error))failure {
-    SSGestureShortcut *gestureShortcut = [(SSGestureShortcut *)[self alloc] initWithCallingView:callingView];
-//    gestureShortcut // set CompletionBlockShit 
-}
+
 
 - (id)initWithCallingView:(UIView *)callingView { 
     
