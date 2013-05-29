@@ -69,7 +69,7 @@
 }
 
 // Entry point for using blocks.  how to return the success block with the TargetAction used with DollarPGestureRecognizer?
-- (void)startGestureRecognition:(UIView *)callingView
+- (void)startGestureRecognitionWithBlocks:(UIView *)callingView
                         success:(void (^)(NSDictionary *gestureInfo))success
                         failure:(void (^)(NSError *error))failure {
     
