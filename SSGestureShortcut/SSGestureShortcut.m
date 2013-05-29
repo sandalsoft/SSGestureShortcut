@@ -42,7 +42,8 @@
         self.dollarPGestureRecognizer = [[DollarPGestureRecognizer alloc] initWithTarget:self
                                                                                   action:@selector(gestureIsRecognized:)];
         [self.dollarPGestureRecognizer setPointClouds:[DollarDefaultGestures defaultPointClouds]];
-        [self.dollarPGestureRecognizer setDelaysTouchesEnded:NO];   
+        [self.dollarPGestureRecognizer setDelaysTouchesEnded:NO];
+        return self;
     }
     return self;
 }
@@ -79,6 +80,7 @@
     self.gestureView.backgroundColor = [UIColor colorWithPatternImage:[self takeScreenShot:callingView]];
     [self addBorder:callingView withBorderColor:self.viewBorderOutlineColor withTickness:self.viewBorderOutlineThickness];
      
+
 #warning need to tweak the geometry of the gestureView for ipad and maybe rotations
     //    self.gestureView.bounds = CGRectMake(callingView.bounds.origin.x, callingView.bounds.origin.y, callingView.bounds.size.width, callingView.bounds.size.height);
     //    NSLog(@"%f x %f", self.gestureView.bounds.size.width, self.gestureView.bounds.size.height);
