@@ -82,6 +82,8 @@
      
 
 #warning need to tweak the geometry of the gestureView for ipad and maybe rotations
+    // http://www.chaseacton.com/snippets/get-screen-size-from-orientation/
+    
     //    self.gestureView.bounds = CGRectMake(callingView.bounds.origin.x, callingView.bounds.origin.y, callingView.bounds.size.width, callingView.bounds.size.height);
     //    NSLog(@"%f x %f", self.gestureView.bounds.size.width, self.gestureView.bounds.size.height);
     
@@ -96,7 +98,8 @@
     DollarResult *result = [sender result];
     //    NSLog(@"Name: %@\nScore: %.2f", [result name], [result score]);
     NSDictionary *gestureDict = @{@"gestureName":[result name],@"gestureScore":[NSNumber numberWithDouble:[result score]]};
-    [[self gestureRegocnitionDidFinishdelegate]  gestureRecognitionDidFinish:gestureDict];
+    [[self gestureRegocnitionDidFinishDelegate]  gestureRecognitionDidFinish:gestureDict];
+    [self.gestureView removeFromSuperview];
 }
 
 
@@ -113,6 +116,7 @@
 // Delegate version of knowing when gesture touches are complete (send from DollarPGestureRecosgnizer)
 - (void) touchesDidFinish {
     [self.dollarPGestureRecognizer recognize];
+    NSLog(@"RESULT?: %@", self.dollarPGestureRecognizer.result);
     [self.gestureView removeFromSuperview];
 }
 

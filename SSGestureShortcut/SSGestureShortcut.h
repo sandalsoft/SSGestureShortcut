@@ -29,7 +29,8 @@
 @property BOOL showViewBorderOutline;
 @property (weak, nonatomic) UIColor *viewBorderOutlineColor;
 @property float viewBorderOutlineThickness;
-@property (nonatomic, assign) id gestureRegocnitionDidFinishdelegate;
+
+@property (nonatomic, assign) id gestureRegocnitionDidFinishDelegate;
 
 
 

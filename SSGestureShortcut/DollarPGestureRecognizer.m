@@ -79,7 +79,7 @@
     // This may or may not be necessary.  We can call [self recognize] ourselves from here
     
 //    [[NSNotificationCenter defaultCenter] postNotificationName:GESTURE_TOUCH_END object:self];
-//    [self touchesDidFinishDelegate];
+    [self touchesDidFinishDelegate];
     
     
     // Kick off [gesture recognize] from here?  Do even I need to send a delegate/notification?
