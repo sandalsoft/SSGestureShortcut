@@ -87,7 +87,7 @@
     
     
     // Does this need to be before or after recognize and notification/delegate?
-    [super touchesEnded:touches withEvent:event];
+//    [super touchesEnded:touches withEvent:event];
 }
 
 

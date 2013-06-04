@@ -40,8 +40,8 @@
 - (void)start;
 
 - (void)startGestureRecognition:(UIView *)callingView;
-- (void)startGestureRecognitionWithBlocks:(UIView *)callingView
-                                  success:(void (^)(NSDictionary *gestureInfo))success
-                                  failure:(void (^)(NSError *error))failure;
+- (void)startGestureRecognitionWithBlocks:(UIView *)callingView 
+                        completionHandler:(void (^)(NSDictionary *gestureInfo, NSError *Error))success;
+
 
 @end

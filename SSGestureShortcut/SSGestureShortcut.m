@@ -71,8 +71,7 @@
 
 // Entry point for using blocks.  how to return the success block with the TargetAction used with DollarPGestureRecognizer?
 - (void)startGestureRecognitionWithBlocks:(UIView *)callingView
-                        success:(void (^)(NSDictionary *gestureInfo))success
-                        failure:(void (^)(NSError *error))failure {
+                        completionHandler:(void (^)(NSDictionary *gestureInfo, NSError *Error))success {
     
     self.gestureView  = [[[NSBundle mainBundle] loadNibNamed:GestureViewiPhoneXib owner:self options:nil] lastObject];
     
